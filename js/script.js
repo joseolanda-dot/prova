@@ -1,9 +1,13 @@
-console.log("Bem-vindo à Men Clean!");
+# js/script.js
 
-const links = document.querySelectorAll("nav a");
+```javascript
+console.log("Catálogo Men Clean carregado!");
 
-links.forEach(link => {
-    link.addEventListener("click", function () {
-        console.log("Categoria acessada: " + this.textContent);
+const menu = document.querySelectorAll("nav a");
+
+menu.forEach(item => {
+    item.addEventListener("click", () => {
+        console.log(`Você acessou a categoria: ${item.textContent}`);
     });
 });
+```
